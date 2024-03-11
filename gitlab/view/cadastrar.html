@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gitlab</title>
+    <link rel="stylesheet" href="../model/navbar.css">
+    <link rel="stylesheet" href="../model/forms.css">
+</head>
+<body>
+    <nav class="Navbar1">
+        <div class="NavbarImagem">
+            <img src="../img/logo.png">
+        </div>
+        <ul class="NavbarLista">
+            <li><a href="./cadastrar.html">Criar Conta</a></li>
+            <li><a href="./login.html">Login</a></li>
+            <li class="sobre"><a href="#">Sobre</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2 class="textoForm">Sua Conta começa aqui!</h2>
+        <form class="formularioClassico" action="../control/controle.php" method="post">
+            <label for="nomeA"><span>____</span>Defina sua senha: </label>
+            <input id="nomeA" maxlength="100" type="text" name="nomeA" placeholder="name"><br>
+            <label for="senhaA">Seu Nome de Usuario: </label>
+            <input id="senhaA" maxlength="40" type="password" name="senhaA" placeholder="password"><br>
+            <button class="submit" type="submit" value="registrar" name="op">Enviar</button>
+            <button class="danger" type="reset">Limpar</button>
+        </form>
+    </main>
+</body>
+</html>

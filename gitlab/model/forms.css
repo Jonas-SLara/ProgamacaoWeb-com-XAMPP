@@ -1,0 +1,66 @@
+.formularioClassico{
+    margin: auto;
+    margin-top: 30px;
+    width: 50%;
+    padding: 20px;
+    background-color: rgb(255, 159, 33);
+    border: solid 2px black;
+    border-radius: 5%;
+    box-shadow: 10px 10px 20px rgb(53, 52, 52);
+}
+
+span{
+    color: rgb(255, 159, 33);
+}
+
+.formularioClassico > input{
+    margin: 0 0 40px 0;
+    min-width: 50%;
+    padding: 8px 5px;
+    font-size: 110%;
+}
+
+form > button{
+    border: none;
+    padding: 10px 8px;
+    font-weight: bold;
+    font-size: 110%;
+    margin-left: 10px;
+    transition: background-color 1s;
+}
+
+form > label{
+    font-size:110%;
+    text-decoration: dotted;
+}
+
+.submit{
+    background-color: rgb(100, 172, 100);
+    color: white;
+}
+
+.danger{
+    background-color: rgb(202, 12, 12);
+    color: white;
+}
+
+.info{
+    background-color: rgb(12, 173, 202);
+    color: white;
+    padding: 10px 12px;
+}
+
+.info:hover{
+    background-color: rgb(10, 132, 153);
+}
+.danger:hover{
+    background-color: rgb(165, 11, 11);
+}
+.submit:hover{
+    background-color: rgb(79, 218, 79);
+}
+
+.textoForm{
+    text-align: center;
+    padding: 4px;
+}

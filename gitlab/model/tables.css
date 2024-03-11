@@ -1,0 +1,52 @@
+/*reset css do navegador*/
+table, th, td, tr{
+    padding: 0;
+    margin: 0;
+}
+/*tipo de tabela simples zebrada*/
+.line_table{
+    border-collapse: collapse;
+    margin: auto;
+    margin-top: 10vh;
+    width: 60%;
+    background-color: white;
+}
+
+.line_table tr th{
+    background-color: rgb(240, 164, 0);
+    color: white;
+    font-size: 120%;
+    font-family: Arial, Helvetica, sans-serif;
+    border-right: solid 4px white;
+    border-bottom: solid 4px white;
+    text-align: left;
+    padding: 5px 10px;
+}
+
+.line_table tr td{
+    text-align: center;
+    font-size: 110%;
+    padding: 5px 10px;
+    border-right: solid 4px white;
+}
+
+.link_table{
+    background-color: white !important;
+    border: none;
+    text-align: left !important;
+}
+.line_table a{
+    background-color: rgb(74, 189, 74);
+    color: white;
+    padding: 5px 10px;
+}
+
+.line_table  tr:nth-child(even){
+    background-color: rgb(187, 181, 181);
+}
+
+caption{
+    caption-side: top;
+    font-size: 120%;
+    text-align: center;
+}
