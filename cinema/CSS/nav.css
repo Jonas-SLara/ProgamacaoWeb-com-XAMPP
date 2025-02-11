@@ -1,0 +1,76 @@
+/**implementação de navbars**/
+/*design responsivo com flex para implementar nav bar*/
+nav{
+	display: flex;/* semelhante a colocar todos os seus elementos em inline-block*/
+	justify-content: space-around; /* o espaço ao redor dos elementos é metade do espaço entre eles*/
+	align-items: center;/* alinha o conteudo de seus elementos filhos no centro*/
+	font-family: sans-serif, Arial, Helvetica;
+	height: 8vh; /* 100vh corresponde a medida maxima da tela do dispositivo*/
+	background-color: rgba(20, 20, 80, 0.8);
+}
+
+li{list-style: none;}
+
+.nav-list{display: flex;}
+
+.nav-list li{margin-inline: 16px;}
+
+/*menu hamburguer para ser mostrado somente em dispositivos menores*/
+.menu-mobile{
+	display: none;
+	cursor: pointer;
+}
+
+.menu-mobile div{
+	width:32px;
+	height:2px;
+	background-color: white;
+	margin: 8px;
+}
+
+/*usando um breakpoint para quando a largura da tela for menor que 999px*/
+@media(max-width: 999px){
+	.menu-mobile{
+		display:block;
+	}
+	/*exibe a nav list na vertical*/
+	.nav-list{
+		position: absolute;
+		z-index:10;
+		top: 8vh;
+		right: 0;
+		width: 50vh;
+		height:92vh;
+		background-color: rgba(20, 20, 80, 0.8);
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-around;
+		transform: translateX(100%);/*coloca 100% da largura do nav-list a direita e ficara fora da tela*/
+		transition: transform 0.3s ease-in;
+	}
+	
+	body{
+		overflow-x: hidden; /*esconde totalmente o que ficar de fora*/
+	}
+	
+	.nav-list li{
+		margin-inline:0;
+		opacity: 0;
+	}
+	
+	.nav-list.active{/*classe que sera adicionada por meio do js para tornar visivel*/
+		transform: translateX(0);
+	}
+	
+	@keyframes navLinkFade{
+		from {
+			opacity: 0;
+			transform: translateX(50px);
+		}
+		to {
+			opacity: 1;
+			transform: translateX(0);
+		}
+	}
+}
+/* fim de implementação navbar*/

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+	<head>
+	<!-- metadados importantes como viewpor definem o design responsivo -->
+		<title>Alugar Filmes</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width-device, initial-scale=1.0">
+		<meta name="author" content="Fulano da silva">
+		<meta name="description" content="uma pagina sobre filmes">
+		<meta name="keywords" content="filmes, netflix">
+		
+	<!--link para o css exxterno, ele pode ser interno com as tags style por exemplo ou inline-->
+		<link rel="stylesheet" href="../CSS/geral.css">
+		<link rel="stylesheet" href="../CSS/form.css">
+		<link rel="stylesheet" href="../CSS/imagens.css">
+		<link rel="stylesheet" href="../CSS/nav.css">
+	<!--link para a aplicação js externa com o atributo defer, que vai carregalo depois do html-->
+		<script defer src="../JS/app.js"></script>
+	</head>
+	
+	<body>
+	<!--implementando uma menu bar responsiva com animação dropdow -->
+		<header>
+			<nav>
+				<a class="logo" href="/index.html"><img alt="logo" src="./logo.png" width= "40px" height="40px"></a>
+				<div class="menu-mobile">
+					<div class="line1"></div>
+					<div class="line2"></div>
+					<div class="line3"></div>
+				</div>
+				<ul class="nav-list">
+					<li><a href="./login.html">Login</a></li>
+					<li><a href="#">Contato</a></li>
+					<li><a href="./jogoMemoria.html">Jogo Da Memória</a></li>
+					<li><a href="./teste.html">Sua Lista</a></li>
+					<li><a href="./cadastro.html">Cadastro</a></li>
+				</ul>
+			</nav>
+		</header>
+		
+		<main>
+			<section class="slideshow-container">
+				<ul class="slides">
+					<li class="slide fade"><img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/fVSTQP2fTp8gex2TjTxvyN1C19e.jpg"
+					 alt="imagem1"></li>
+					<li class="slide fade" data-ativo><img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/cWsd33Nwp3tgYB5LMMadl3qVMKh.jpg"
+					 alt="imagen2"></li>
+					<li class="slide fade"><img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/bGhhNzJYDsuLruNN5bJ2PvLcMiq.jpg"
+					 alt="imagem3"></li>
+					<li class="slide fade"><img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/iMVuv6Gz5fj7vZ51IjRF3AiW87y.jpg"
+					 alt="imagem4"></li>
+				</ul>
+				<button class="previous-button" data-botao="prev">&lt</button>
+				<button class="next-button" data-botao="next">&gt</button>
+			</section>
+		</main>
+		
+	</body>
+</html>

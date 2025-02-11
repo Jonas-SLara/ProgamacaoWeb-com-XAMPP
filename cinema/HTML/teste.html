@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width-device, initial-scale=1.0">
+	<link rel="stylesheet" href="../CSS/geral.css">
+	<link rel="stylesheet" href="../CSS/form.css">
+	<link rel="stylesheet" href="../CSS/nav.css">
+	<script defer src="../JS/app.js"></script>
+	<title>aula js</title>
+</head>
+<body>
+	<header>
+			<nav>
+				<a class="logo" href="./index.html"><img alt="logo" src="./logo.png" width= "40px" height="40px"></a>
+				<div class="menu-mobile">
+					<div class="line1"></div>
+					<div class="line2"></div>
+					<div class="line3"></div>
+				</div>
+				<ul class="nav-list">
+					<li><a href="./login.html">Login</a></li>
+					<li><a href="#">Contato</a></li>
+					<li><a href="./jogoMemoria.html">Jogo Da Memória</a></li>
+					<li><a href="./cadastro.html">Cadastro</a></li>
+				</ul>
+			</nav>
+		</header>
+	<main>
+		<h2>Filmes disponiveis</h2>
+		<div id="container">
+			
+		</div>
+		<div id="dropBox">
+			<button class="btnDrop ripple-button">Inserir Novos Filmes</button>
+			<div class="dropForm">
+				<form id="insere" action="./teste.html" method="get" onsubmit="event.preventDefault(); criarFilme();">
+					<label for="nome">Nome do Filme: </label>
+					<input class="text" id="nome" type="text" name="nome" size="40" maxlength="40" placeholder="insira o nome" required><br>
+					<label for="autor">Autor Principal: </label>
+					<input class="text" id="autor" type="text" name="autor" size="30" maxlength="30" placeholder="nome do autor principal" required><br>
+					<label for="nota">Nota do Filme: </label>
+					<input class="ranger" id="nota" value="0" type="range" name="nota" min="0" max="10" step="0.1">
+					<span id="rangeValue">0</span><br>
+					<label for="valor">Valor do Filme: </label>
+					<input class="number" id="valor" type="number" name="valor" min="0" step="0.1" placeholder="$$ " required><br>
+					<button class="submit ripple-button" type="Submit" value="submit">Submit</button>
+					<button class="reset ripple-button " type="reset" value="reset">Reset</button>
+				</form>
+			</div>
+		</div>
+	</main>
+	<script src="../JS/aula.js"></script>
+</body>
+</html>

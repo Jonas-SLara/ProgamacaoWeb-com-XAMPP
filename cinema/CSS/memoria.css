@@ -1,0 +1,20 @@
+h1{
+	text-align:center;
+	width: 100%;
+	color: white;
+	text-shadow: 2px 2px 5px black;
+}
+
+.game-container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.game-board{
+	display: grid;
+	grid-template-columns: repeat(4, 100px);
+	grid-template-rows: repeat(4, 100px);
+	gap: 10px;
+	perspective: 1000px;
+}

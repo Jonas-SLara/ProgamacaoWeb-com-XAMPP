@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width-device, initial-scale=1.0">
+	<link rel="stylesheet" href="../CSS/geral.css">
+	<link rel="stylesheet" href="../CSS/form.css">
+	<link rel="stylesheet" href="../CSS/nav.css">
+	<title>aula js</title>
+</head>
+<body>
+	<header>
+		<nav>
+			<a class="logo" href="./index.html"><img alt="logo" src="./logo.png" width= "40px" height="40px"></a>
+			<div class="menu-mobile">
+				<div class="line1"></div>
+				<div class="line2"></div>
+				<div class="line3"></div>
+			</div>
+			<ul class="nav-list">
+				<li><a href="./teste.html">Sua Lista</a></li>
+				<li><a href="#">Contato</a></li>
+				<li><a href="./jogoMemoria.html">Jogo Da Memória</a></li>
+				<li><a href="./login.html">Login</a></li>
+			</ul>
+		</nav>
+	</header>
+	
+	<main>
+		<form id="cadastro" method="post" action="/index.php">
+			<fieldset>
+			<legend>Pagina de Cadastro</legend>
+				<label for="email">Email: </label>
+				<input id="email" name="email" type="text" required><br>
+				<label for="telefone">Telefone: </label>
+				<input id="telefone" name="telefone" type="text" required><br>
+				<label for="senha">Senha: </label>
+				<input id="senha" name="senha" type="password" required>
+				<span id="msgSenha">A senha deve conter: Números, Maiúsculas e Minúsculas, Especiais, sem ' ' e maior que 6 Caracteres</span>
+			</fieldset>
+			<fieldset>
+				<label for="assinatura">Assinatura: </label>
+				<select id="assinatura" size="1" name="assinatura_tipo" required>
+					<option value="pro" data-valor="50.00">Pro $50.00</option>
+					<option value="plus" data-valor="15.00">Plus $15.00</option>
+					<option value="free" data-valor="0">Free $0</option>
+				</select><br>
+				<label for="cpf">CPF: </label>
+				<input type="text" id="cpf" name="cpf" size="14"><br>
+				<label for="pagamento">Opção de pagamento:</label>
+				<select id="pagamento" size="1" name="pagamento_tipo">
+					<option value="pix">PIX</option>
+					<option value="debito">Débito</option>
+					<option value="credito">Crédito</option>
+				</select><br>
+			</fieldset>
+			<button type="submit" id="submit" class="ripple-button" name="op" value="cadastrar">Se Inscrever</button>
+			<button type="reset" class="ripple-button">Limpar Formulario</button>
+		</form>
+	</main>
+	<script src="../JS/app.js"></script>
+	<script src="../JS/validacao.js"></script>
+</body>
+</html>

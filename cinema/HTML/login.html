@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width-device, initial-scale=1.0">
+	<link rel="stylesheet" href="../CSS/geral.css">
+	<link rel="stylesheet" href="../CSS/nav.css">
+	<link rel="stylesheet" href="../CSS/form.css">
+	<title>aula js</title>
+</head>
+<body>
+	<header>
+		<nav>
+			<a class="logo" href="./index.html"><img alt="logo" src="./logo.png" width= "40px" height="40px"></a>
+			<div class="menu-mobile">
+				<div class="line1"></div>
+				<div class="line2"></div>
+				<div class="line3"></div>
+			</div>
+			<ul class="nav-list">
+				<li><a href="./teste.html">Sua Lista</a></li>
+				<li><a href="#">Contato</a></li>
+				<li><a href="./jogoMemoria.html">Jogo Da Memória</a></li>
+				<li><a href="./cadastro.html">Cadastro</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<form id="login" method="post" action="/index.php">
+			<fieldset>
+				<legend>Login</legend>
+				<label for="email">Email: </label>
+				<input id="email" name="email" type="text" required><br>
+				<label for="senha">Senha: </label>
+				<input id="senha" name="senha" type="password" required>
+			</fieldset>
+			<button type="submit" id="submit" class="ripple-button" name="op" value="cadastrar">Se Inscrever</button>
+			<button type="reset" class="ripple-button">Limpar Formulario</button>
+		</form>
+	</main>
+	<script src="../JS/app.js"></script>
+	<script src="../JS/validacao.js"></script>
+</body>
+</html>

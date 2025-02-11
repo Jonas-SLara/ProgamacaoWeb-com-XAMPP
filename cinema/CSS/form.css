@@ -1,0 +1,104 @@
+/**estilo para formularios**/
+
+/*implementação dos botões e inputs*/
+button{
+	border: none;
+	cursor: pointer;
+	padding:10px;
+	font-size:16px;
+	border-radius: 10px;
+	color: white;
+}
+		
+
+.ripple-button{
+	position:relative;
+	overflow: hidden;
+	background-color: #007bff;
+	transition: background 0.3s;
+}
+.ripple-button:hover{background-color: #0056b3;}
+
+/**classe ripple que sera adicionada por meio de js**/
+.ripple{
+	position:absolute;
+	background: rgba(255, 0, 0, 0.6);
+	width: 10px;
+	height: 10px;
+	border-radius:50%;
+	transform: scale(1);
+	animation: ripple-animation 0.6s linear;
+	pointer-events: none;
+}
+
+@keyframes ripple-animation{
+	from{
+		transform: scale(1);
+		opacity:1;
+	}
+	to{
+		transform: scale(30);
+		opacity:0;
+	}
+}
+/**implementação de um formulario drop atraves de um botao**/
+#dropBox{
+	width:80%;
+	margin-inline: auto;
+	margin-top: 20px;
+}
+.btnDrop{
+	background-color: rgb(20, 20, 255);
+	box-shadow: 0 1px 2px white;
+}
+.dropForm{
+	background-color: rgba(0,0,0,0.3);
+	color: white;
+	font-size:14px;
+	border: solid 2px white;
+	opacity: 0;
+	visibility: hidden;
+	transform: translateY(-100%);
+	overflow: hidden;
+	transition: transform 0.2s ease-in, opacity 0.5s ease-in;
+	position: relative;
+	top: 16px;
+}
+.dropForm.see{
+	visibility: visible;
+	transform: translateY(0);
+	opacity: 1;
+}
+input, label, select{
+	font-size:16px;
+	height:20px;
+	border:none;
+	padding-inline: 5px;
+	color:rgb(240, 240, 255);
+	margin: 20px;
+}
+input, select{
+	background-color: rgba(0,0,0, 0.5);
+	box-shadow: 2px 0 5px white;
+}
+
+fieldset{
+	margin:5px;
+	background-color: rgba(255, 255, 255, 0.1);
+}
+legend{
+	font-size:18px;
+	color: rgb(240, 240, 255);
+	text-align: center;
+}
+#msgSenha{
+	font-size:12px;
+	display: block;
+	padding: 0 10px 4px 25px;
+	transform: translateY(-10px);
+}
+#cadastro, #login{
+	margin-inline:auto;
+	transform: translateY(10%);
+	width:60%;
+}
